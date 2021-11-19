@@ -1,0 +1,78 @@
+{
+
+   "action":{
+
+     "patrimony":600,
+     "data":
+     [
+
+         {
+
+            "patrimony":200,
+             "name":"TAEE4",
+             "color":"#e77f67",
+             "purchases":
+             [
+                {
+                    "date":"11/09/2021",
+                    "amount":2,
+                    "value":"11,92"
+                },
+                {
+                    "date":"11/09/2021",
+                    "amount":3,
+                    "value":"11,92"
+                }
+             ],
+             "sales":
+             []
+
+
+         }
+
+     ]
+   },
+   "funds":{
+
+    "patrimony":680,
+    "data":
+    [
+
+        {
+
+           "patrimony":200,
+            "name":"MXFR11",
+            "color":"#e77f67",
+            "purchases":
+            [
+               {
+                   "date":"11/09/2021",
+                   "amount":2,
+                   "value":"99,99"
+               },
+               {
+                   "date":"11/09/2021",
+                   "amount":1,
+                   "value":"10,00"
+               }
+            ],
+            "sales":
+            []
+
+
+        }
+
+    ]
+
+
+   },
+   "cdi":{
+
+    "patrimony":200,
+    "percentage":"200%",
+    "date_start":"11/09/2021"
+
+
+   }
+
+}
