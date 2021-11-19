@@ -4,13 +4,12 @@ const {width, height} = Dimensions.get('window')
 
 export const SIZES = {
 
-    h1: width * 0.08,
-    h2: width * 0.06,
+    h1: width * 0.1,
+    h2: width * 0.07,
     h3: width * 0.05,
     body01: width * 0.045,
     body02: width * 0.04,
     body03: width * 0.03,
-
 
     width,
     height
