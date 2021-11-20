@@ -15,7 +15,7 @@ import layers from '../assets/icons/layers.svg'
 import search from '../assets/icons/search.svg'
 import wallet from '../assets/icons/wallet.svg'
 
-export{
+export default {
 
     arrow_back,
     arrow_down,

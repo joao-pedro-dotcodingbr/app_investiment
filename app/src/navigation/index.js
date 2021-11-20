@@ -7,9 +7,9 @@ const Stack = createNativeStackNavigator()
 
 const Index = () =>{
     return(
-        <NavigationContainer>
+        <NavigationContainer >
 
-            <Stack.Navigator screenOptions={{headerShown:false}}>
+            <Stack.Navigator screenOptions={{headerShown:false}} >
 
                 <Stack.Screen name='HomeTab' component={ScreensHome} />
 

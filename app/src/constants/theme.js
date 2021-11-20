@@ -11,6 +11,8 @@ export const SIZES = {
     body02: width * 0.04,
     body03: width * 0.03,
 
+    padding: width * 0.05,
+
     width,
     height
 
