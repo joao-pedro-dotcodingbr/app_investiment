@@ -1,11 +1,15 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import {Container} from './styles'
+import {Container , Title} from './styles'
+import {ContainerPatrimony} from '../../components/index'
 export default function index() {
     return (
       
       <Container>
-          <Text>teste</Text>
+        
+          <Title>Seu Patrimônio</Title>
+
+          <ContainerPatrimony dateStart={'10/06/2000'} patrimony={'2000'}/>
+
       </Container>
 
     )

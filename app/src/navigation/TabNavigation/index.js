@@ -67,8 +67,8 @@ const Index = () =>{
         <Tab.Navigator  screenOptions={({route, navigation}) =>({
 
             headerShown:false,
-           headerShadowVisible:false,
-           tabBarShowLabel:false,
+            headerShadowVisible:false,
+            tabBarShowLabel:false,
             tabBarStyle:{
 
                 backgroundColor: COLORS.black_dark,

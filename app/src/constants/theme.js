@@ -7,11 +7,14 @@ export const SIZES = {
     h1: width * 0.1,
     h2: width * 0.07,
     h3: width * 0.05,
+    
     body01: width * 0.045,
     body02: width * 0.04,
     body03: width * 0.03,
 
     padding: width * 0.05,
+    padding02: width * 0.08,
+    padding03: width * 0.05,
 
     width,
     height
@@ -37,13 +40,53 @@ export const COLORS ={
 }
 
 export const FONTS = {
-    h1:{fontSize:SIZES.h1, fontFamily:'Dongle-Bold'},
-    h2:{fontSize:SIZES.h2, fontFamily:'Dongle-Bold'},
-    h3:{fontSize:SIZES.h3, fontFamily:'Dongle-Bold'},
-    body01:{fontSize:SIZES.body01, fontFamily:'Dongle-Light'},
-    body02:{fontSize:SIZES.body02, fontFamily:'Dongle-Light'},
-    body03:{fontSize:SIZES.body03, fontFamily:'Dongle-Light'},
-    body03Bold: {fontSize:SIZES.body03, fontFamily:'Dongle-Bold'},
+
+    h1: 
+        `
+            font-size: ${SIZES.h1}px;
+            font-family: 'Dongle-Bold' ;
+        
+        `,
+    h2: 
+        `
+            font-size: ${SIZES.h2}px;
+            font-family: 'Dongle-Bold' ;
+        
+        `,
+    h3: 
+        `
+            font-size: ${SIZES.h3}px;
+            font-family: 'Dongle-Bold' ;
+        
+        `,
+    body01:
+        `
+        font-size: ${SIZES.body01}px;
+        font-family: 'Dongle-Light' ;
+
+        `,
+
+    body02:
+        `
+        font-size: ${SIZES.body02}px;
+        font-family: 'Dongle-Light' ;
+
+        `,
+
+    body03:
+        `
+        font-size: ${SIZES.body03}px;
+        font-family: 'Dongle-Light' ;
+
+        `,
+
+    body03Bold:
+        `
+        font-size: ${SIZES.body03}px;
+        font-family: 'Dongle-Bold' ;
+
+        `,
+
 }
 
 export const  SHANDOW = {
