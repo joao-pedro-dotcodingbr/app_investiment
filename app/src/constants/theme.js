@@ -14,7 +14,7 @@ export const SIZES = {
 
     padding: width * 0.05,
     padding02: width * 0.08,
-    padding03: width * 0.05,
+    padding03: width * 0.023,
 
     width,
     height

@@ -10,8 +10,6 @@ export const Container = styled(View)`
     height: ${SIZES.height * 0.13}px;
     background-color: ${COLORS.black_dark};
     border-radius: ${SIZES.padding}px;
-    box-shadow: 0 0 100px gold;
-
     
 `
 //#region DATE

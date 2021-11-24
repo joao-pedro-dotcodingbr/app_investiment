@@ -89,7 +89,9 @@ const Index = () =>{
             
         })}>
 
-            <Tab.Screen name='Home' component={ScreenHome}/>
+            <Tab.Screen name='Home' >
+                {props =><ScreenHome {...props}/>}
+             </Tab.Screen>
             <Tab.Screen name='Goals' component={ScreenGoals}/>
             <Tab.Screen name='Registation' component={ScreenRegistation}/>
             <Tab.Screen name='Chart' component={ScreenChart}/>
