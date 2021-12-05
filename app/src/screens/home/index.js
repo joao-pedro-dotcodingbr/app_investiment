@@ -1,18 +1,26 @@
 import React from 'react'
+import {drop} from 'react-native'
 import { 
 
   Container , 
+  ContainerTop,
   Title,
   ContainerChartPatrimony,
   ContainerChartPatrimonyHeader,
   ScrollListButtons,
-  ButtonMaximize
+  ButtonMaximize,
+  ScrollPortfólio,
+  ContainerDividends
+  
 
 } from './styles'
 
-import {ContainerPatrimony , ButtonSelected , GroupButtons , ChartLine} from '../../components/index'
+import {ContainerPatrimony , GroupButtons , ChartLine , CardPortfolio} from '../../components/index'
 
-import {SHANDOW , Icons , COLORS} from '../../constants/index'
+import { Icons , COLORS , DataUser} from '../../constants/index'
+
+const DataPortifolio = DataUser
+const ValuePatrimony = DataUser[0]['main'].patrimony
 
 export default function index(props) {
 
@@ -37,19 +45,30 @@ export default function index(props) {
 
     const dataChartLine = [
 
-        {x:100, y:200  },
-        {x:700, y:300 },
-        {x:1000, y:600 },
-        {x:1700, y:200 },
-        {x:200, y:1000 },
+        {x:'10/01', y:200  },
+        {x:'10/02', y:300 },
+        {x:'10/03', y:600 },
+        {x:'10/04', y:200 },
+        {x:'10/05', y:400 },
+        {x:'10/06', y:500 },
+        {x:'10/07', y:700 },
+        {x:'10/08', y:1000 },
+        {x:'10/09', y:1010 },
+        {x:'10/10', y:1200 }, 
+        {x:'10/11', y:1300 }, 
+        {x:'10/12', y:1100 },
     ]
 
     return (
       
       <Container>
         
-          <Title>Seu Patrimônio</Title>
+        <ContainerTop>
+            
+            <Title>Seu Patrimônio</Title>
 
+        </ContainerTop>
+         
           <ContainerPatrimony dateStart={'10/06/2000'} patrimony={'2000'}/>
 
           <ContainerChartPatrimony >
@@ -64,10 +83,34 @@ export default function index(props) {
 
               </ContainerChartPatrimonyHeader>
 
-              <ChartLine data={dataChartLine} width={330} height={220}/>
+              <ChartLine data={dataChartLine} width={300} height={210}/>
 
           </ContainerChartPatrimony>
+        
+          <Title>Portifólio</Title>
 
+          <ScrollPortfólio>
+          
+                {DataPortifolio.map(item =>{
+                    
+
+                    if(!item["main"]){
+                    
+                        return <CardPortfolio props={item} back={'red'} Icon={Icons.factory} fullPatrimony={ValuePatrimony}/>
+                    
+                    }
+                
+                })}
+                    
+          </ScrollPortfólio>
+
+          <Title>Proventos</Title>
+
+          <ContainerDividends>
+
+          </ContainerDividends>
+
+          
       </Container>
 
     )

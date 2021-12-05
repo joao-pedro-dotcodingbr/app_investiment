@@ -1,8 +1,13 @@
-{
+[
 
-   "action":{
+   { "main":{
+        "patrimony":600,
+        "date_start":"11/09/2021"
+    }},
+  { "action":{
 
      "patrimony":600,
+     "date_start":"11/09/2021",
      "data":
      [
 
@@ -31,10 +36,11 @@
          }
 
      ]
-   },
-   "funds":{
+   }},
+   {"funds":{
 
     "patrimony":680,
+    "date_start":"11/09/2021",
     "data":
     [
 
@@ -65,14 +71,14 @@
     ]
 
 
-   },
-   "cdi":{
+   }},
+   {"cdi":{
 
     "patrimony":200,
     "percentage":"200%",
     "date_start":"11/09/2021"
 
 
-   }
+   }}
 
-}
+]

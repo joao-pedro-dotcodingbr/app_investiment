@@ -44,6 +44,7 @@ const Index = () =>{
             {
                 width: SIZES.width * 0.13,
                 height: SIZES.width * 0.13,
+             
                 borderRadius: 10,
 
                 alignItems:"center",
